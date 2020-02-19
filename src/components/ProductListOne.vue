@@ -13,13 +13,16 @@
 <script>
 export default {
   props: {
-    products: {
-      type: Array
-    }
+    
   },
   data () {
     return {
     
+    }
+  },
+  computed: {
+    products(){
+      return this.$store.state.products;
     }
   }
 }
